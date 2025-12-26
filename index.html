@@ -1,56 +1,348 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/strato-model/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/strato-model/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/strato-model/assets/styles-guStct1H.css">
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strato-Model | Инновационный консалтинг</title>
+<link rel="icon"
+  href="data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='4' y='4' width='20' height='20' rx='6' fill='%231A1C1E'/%3E%3Crect x='10' y='10' width='18' height='18' rx='6' stroke='%23B4FF39' stroke-width='2.5'/%3E%3Ccircle cx='19' cy='19' r='3' fill='%232DD4BF'/%3E%3C/svg%3E"
+  type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Syne:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" crossorigin src="/strato-model/assets/main-C1abbvD5.js"></script>
+    <link rel="stylesheet" crossorigin href="/strato-model/assets/main-Ck-Fz4dY.css">
   </head>
   <body>
+    <div class="bg-glow"></div>
     <header class="header">
-  <div class="container">
+  <div class="container header__container">
+    <a href="./#hero" class="logo">
+      <span class="logo__dot"></span>
+      <span class="logo__text">Strato-Model</span>
+    </a>
+
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="./#about" class="nav__link">О подходе</a></li>
+        <li class="nav__item"><a href="./#services" class="nav__link">Услуги</a></li>
+        <li class="nav__item"><a href="./#insights" class="nav__link">Инсайты</a></li>
+        <li class="nav__item"><a href="./#team" class="nav__link">Команда</a></li>
       </ul>
     </nav>
+
+    <a href="./#contact" class="btn btn--header">
+      <span>Связаться</span>
+      <i data-lucide="arrow-up-right"></i>
+    </a>
+
+    <button class="burger" aria-label="Menu">
+      <span></span>
+    </button>
   </div>
 </header>
+<div class="menu-overlay">
+  <nav class="menu-nav">
+    <a href="./#hero" class="menu-link">Главная</a>
+    <a href="./#about" class="menu-link">О подходе</a>
+    <a href="./#services" class="menu-link">Услуги</a>
+    <a href="./#insights" class="menu-link">Инсайты</a>
+    <a href="./#contact" class="menu-link">Связаться</a>
+  </nav>
+</div>
 
-
-    <main>
+    <main id="main-content">
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+    <div class="container hero__container">
+        <div class="hero__content">
+            <div class="hero__badge fade-in">
+                <span>Технология нового поколения</span>
+            </div>
+            <h1 class="hero__title">
+                Технологии, которые <span class="text-gradient">меняют правила</span> игры
+            </h1>
+            <p class="hero__descr fade-in">
+                Инновационная цифровая инфраструктура для консалтинга. Постройте стратегию роста, которая работает на
+                вас уже сегодня.
+            </p>
+            <div class="hero__btns fade-in">
+                <a href="#contact" class="btn btn--primary magnetic">
+                    <span>Начать сейчас</span>
+                </a>
+                <a href="#about" class="btn btn--secondary magnetic">
+                    <span>Узнать детали</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero__visual">
+            <div class="hero__card-wrapper">
+                <div class="hero__card">
+                    <div class="hero__card-inner">
+                        <img src="/strato-model/assets/one-B944Le7w.jpg" alt="AI" class="hero__img">
+                        <div class="hero__card-glass"></div>
+                    </div>
+                </div>
+                <div class="hero__decor hero__decor--1 float-element" data-speed="2"></div>
+                <div class="hero__decor hero__decor--2 float-element" data-speed="-3"></div>
+                <div class="hero__decor hero__decor--3 float-element" data-speed="1.5"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about" id="about">
+    <div class="container about__grid">
+        <div class="about__text reveal">
+            <h2 class="section-title">Переосмыслите <br><span class="text-gradient">подход к развитию</span></h2>
+            <p>Мы не просто даем советы. Мы создаем <strong>передовую цифровую инфраструктуру</strong> для принятия
+                решений. Наши стратегии базируются на глубокой аналитике и AI-инструментах для реальных задач.</p>
+            <div class="about__stats">
+                <div class="stat-item"><strong>150+</strong><span>Кейсов в ЕС</span></div>
+                <div class="stat-item"><strong>12</strong><span>Лет экспертизы</span></div>
+            </div>
+        </div>
+        <div class="about__image reveal">
+            <div class="image-stack">
+                <img src="/strato-model/assets/two-CwGvbNH4.jpg" alt="Strategy" class="img-1">
+                <div class="image-accent"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <div class="container">
+        <h2 class="section-title text-center reveal">Направления <span class="text-gradient">роста</span></h2>
+        <div class="services__grid">
+            <div class="service-card reveal">
+                <i data-lucide="zap"></i>
+                <h3>Инновационная технология</h3>
+                <p>Внедрение цифровых моделей управления, которые меняют правила игры в вашем сегменте.</p>
+            </div>
+            <div class="service-card reveal">
+                <i data-lucide="shield-check"></i>
+                <h3>Риск-менеджмент</h3>
+                <p>Методологии, доказавшие эффективность в условиях волатильности рынков Италии и Европы.</p>
+            </div>
+            <div class="service-card reveal">
+                <i data-lucide="trending-up"></i>
+                <h3>Программа дохода</h3>
+                <p>Разработка стратегий для пассивного и операционного дохода на базе инноваций.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="team" id="team">
+    <div class="container">
+        <div class="team__intro reveal">
+            <h2 class="section-title">Методологии, <br><span class="text-gradient">доказавшие эффективность</span></h2>
+            <p class="section-subtitle">Наша команда объединяет стратегов и аналитиков из ведущих институтов Европы.</p>
+        </div>
+
+        <div class="team__grid">
+            <div class="team-card reveal">
+                <div class="team-card__img-wrapper">
+                    <img src="/strato-model/assets/three-BOywxy9I.jpg" alt="Expert" class="team-card__img">
+                    <div class="team-card__social">
+                        <a href="https://www.linkedin.com/"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="team-card__info">
+                    <span class="team-card__role">Senior Partner</span>
+                    <h3 class="team-card__name">Alessandro Moretti</h3>
+                    <p class="team-card__bio">Специалист по инновационным технологиям и цифровой инфраструктуре ЕС.</p>
+                </div>
+            </div>
+
+            <div class="team-card reveal">
+                <div class="team-card__img-wrapper">
+                    <img src="/strato-model/assets/four-BerbGnxZ.jpg" alt="Expert" class="team-card__img">
+                    <div class="team-card__social">
+                        <a href="https://www.linkedin.com/"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="team-card__info">
+                    <span class="team-card__role">Strategy Lead</span>
+                    <h3 class="team-card__name">Giulia Ferraro</h3>
+                    <p class="team-card__bio">Эксперт по макроэкономическим прогнозам и стратегиям пассивного дохода.
+                    </p>
+                </div>
+            </div>
+
+            <div class="team-card reveal">
+                <div class="team-card__img-wrapper">
+                    <img src="/strato-model/assets/five-B4v-MnBN.jpg" alt="Expert" class="team-card__img">
+                    <div class="team-card__social">
+                        <a href="https://www.linkedin.com/"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="team-card__info">
+                    <span class="team-card__role">AI Consultant</span>
+                    <h3 class="team-card__name">Marco Ricci</h3>
+                    <p class="team-card__bio">Разработка и внедрение AI-инструментов для автоматизации бизнес-задач.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="insights" id="insights">
+    <div class="container">
+        <div class="insights__header reveal">
+            <div>
+                <h2 class="section-title">Последние <span class="text-gradient">инсайты</span></h2>
+                <p class="section-subtitle">Практики и стратегии, применимые уже сегодня.</p>
+            </div>
+            <a href="#contact" class="btn btn--secondary magnetic">
+                <span>Все статьи</span>
+                <i data-lucide="arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="insights__list">
+            <article class="post-card reveal">
+                <div class="post-card__image">
+                    <img src="/strato-model/assets/six-C06GBeZN.jpg" alt="Trends">
+                    <div class="post-card__tag">Рынки</div>
+                </div>
+                <div class="post-card__content">
+                    <div class="post-card__date">24 Дек 2025</div>
+                    <h3 class="post-card__title">Рынок консалтинга в Италии: Тренды 2025</h3>
+                    <p class="post-card__excerpt">Как локальные компании адаптируются к новой цифровой инфраструктуре и
+                        решениям нового поколения.</p>
+                    <a href="#contact" class="post-card__link">
+                        <span>Читать статью</span>
+                        <div class="link-circle"><i data-lucide="arrow-up-right"></i></div>
+                    </a>
+                </div>
+            </article>
+
+            <article class="post-card reveal">
+                <div class="post-card__image">
+                    <img src="/strato-model/assets/seven-BAUVHCoL.jpg" alt="AI Tools">
+                    <div class="post-card__tag">Технологии</div>
+                </div>
+                <div class="post-card__content">
+                    <div class="post-card__date">18 Дек 2025</div>
+                    <h3 class="post-card__title">AI-инструменты для реальных задач</h3>
+                    <p class="post-card__excerpt">Почему автоматизация стратегии — это уже не будущее, а гигиенический
+                        минимум для роста проекта.</p>
+                    <a href="#contact" class="post-card__link">
+                        <span>Читать статью</span>
+                        <div class="link-circle"><i data-lucide="arrow-up-right"></i></div>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="container contact__container reveal">
+        <div class="contact__info">
+            <h2 class="section-title">Готовы к <br>трансформации?</h2>
+            <p>Запросите доступ к платформе или получите бесплатную консультацию по всем вопросам уже сегодня.</p>
+        </div>
+        <form class="contact__form" id="mainForm">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Ваше имя" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+<div class="form-group">
+    <input type="tel" id="phone" placeholder="Телефон (только цифры)" inputmode="numeric" pattern="[0-9]*" required>
+</div>
+            <div class="form-group captcha-group">
+                <label id="captchaLabel">5 + 2 = ?</label>
+                <input type="number" id="captchaInput" placeholder="Ответ" required>
+            </div>
+            <label class="checkbox-group">
+                <input type="checkbox" required>
+                <span>Я согласен с <a href="./personal-data-policy.html">политикой данных</a></span>
+            </label>
+            <button type="submit" class="btn btn--primary btn--wide magnetic">Отправить запрос</button>
+            <div id="formSuccess" class="form-message hidden">Ваша заявка успешно отправлена!</div>
+        </form>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <a href="./#hero" class="logo logo--footer">
+        <span class="logo__dot"></span>
+        <span class="logo__text">Strato-Model</span>
       </a>
-    </p>
+      <p class="footer__tagline">Переосмыслите подход к развитию вашего бизнеса через глубокую аналитику и
+        стратегический консалтинг.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Навигация</h4>
+      <ul class="footer__menu">
+        <li><a href="./#about">О проекте</a></li>
+        <li><a href="./#services">Направления</a></li>
+        <li><a href="./#insights">Блог</a></li>
+        <li><a href="./#contact">Контакты</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Документы</h4>
+      <ul class="footer__menu">
+        <li><a href="./privacy.html">Privacy Policy</a></li>
+        <li><a href="./cookies.html">Cookie Policy</a></li>
+        <li><a href="./terms.html">Terms of Service</a></li>
+        <li><a href="./return.html">Return Policy</a></li>
+        <li><a href="./disclaimer.html">Disclaimer</a></li>
+        <li><a href="./personal-data-policy.html">Data Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Контакты</h4>
+      <ul class="footer__contacts">
+        <li>
+          <i data-lucide="map-pin"></i>
+          <span>Via della Conciliazione, 44, 00193 Roma RM, Italy</span>
+        </li>
+        <li>
+          <i data-lucide="phone"></i>
+          <a href="tel:+3906681911">+39 06 6819 11</a>
+        </li>
+        <li>
+          <i data-lucide="mail"></i>
+          <a href="mailto:hello@strato-model.blog">hello@strato-model.blog</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <p>&copy; 2025 Strato-Model. Все права защищены. Предложение активно в странах ЕС.</p>
   </div>
 </footer>
-
+    <div id="cookiePopup" class="cookie-popup">
+      <p>
+        Мы используем файлы cookie, чтобы анализировать трафик и делать
+        <strong>Strato-Model</strong> лучше для вас. Продолжая использовать сайт,
+        вы соглашаетесь с нашей <a href="./cookies.html">Политикой конфиденциальности</a>.
+      </p>
+      <div class="cookie-popup__btns">
+        <button id="acceptCookies" class="btn btn--header btn--cookie magnetic">
+          Принять всё
+        </button>
+      </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
   </body>
 </html>
